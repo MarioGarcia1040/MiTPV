@@ -8,13 +8,11 @@
  */
 package view;
 
-import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 /**
  *
- * @author buhos
+ * @author Mario García | Búho Computación - mariogarcia1040@gmail.com
  */
 public class MainView extends javax.swing.JFrame {
 
@@ -27,33 +25,6 @@ public class MainView extends javax.swing.JFrame {
         setSize(800, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
-        JLabel label = new JLabel("¡Bienvenido al sistema!", SwingConstants.CENTER);
-        add(label);
-
-        menuSalir.addMenuListener(new javax.swing.event.MenuListener() {
-            @Override
-            public void menuSelected(javax.swing.event.MenuEvent e) {
-                int opcion = javax.swing.JOptionPane.showConfirmDialog(
-                        MainView.this,
-                        "¿Deseas salir del sistema?",
-                        "Confirmar salida",
-                        javax.swing.JOptionPane.YES_NO_OPTION
-                );
-                if (opcion == javax.swing.JOptionPane.YES_OPTION) {
-                    System.exit(0);
-                }
-            }
-
-            @Override
-            public void menuDeselected(javax.swing.event.MenuEvent e) {
-            }
-
-            @Override
-            public void menuCanceled(javax.swing.event.MenuEvent e) {
-            }
-        });
-
     }
 
     /**
@@ -94,7 +65,6 @@ public class MainView extends javax.swing.JFrame {
         jMenuItem17 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItem18 = new javax.swing.JMenuItem();
-        menuSalir = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -199,10 +169,6 @@ public class MainView extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu6);
 
-        menuSalir.setMnemonic('S');
-        menuSalir.setText("Salir");
-        jMenuBar1.add(menuSalir);
-
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -246,13 +212,13 @@ public class MainView extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        
+
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new MainView().setVisible(true);            
+            new MainView().setVisible(true);
         });
     }
 
@@ -286,6 +252,5 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JMenu menuSalir;
     // End of variables declaration//GEN-END:variables
 }
