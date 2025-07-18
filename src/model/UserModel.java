@@ -10,7 +10,7 @@ package model;
 
 /**
  *
- * @author buhos
+ * @author Mario García | Búho Computación - mariogarcia1040@gmail.com
  */
 public class UserModel {
 

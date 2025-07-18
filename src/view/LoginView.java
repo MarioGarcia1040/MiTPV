@@ -14,7 +14,7 @@ import javax.swing.*;
 
 /**
  *
- * @author buhos
+ * @author Mario García | Búho Computación - mariogarcia1040@gmail.com
  */
 public class LoginView extends JFrame {
 

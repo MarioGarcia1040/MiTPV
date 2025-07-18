@@ -1,20 +1,20 @@
 /* 
  * OpenVenta v. 0.0.1
- * Interface de autorización de usuarios
+ * Interface para configuración del archivo properties
  * Desarrollado por Mario García - Búho Computación
  * mariogarcia1040@yahoo.com.mx
- * 13-Julio-2025
+ * 17-Julio-2025
  * 
  */
 package interfaces;
-
-import model.UserModel;
 
 /**
  *
  * @author Mario García | Búho Computación - mariogarcia1040@gmail.com
  */
-public interface IUserAuth {
+public interface IConfigProperties {
 
-    boolean acceso(UserModel userModel);
+    boolean load();
+
+    String get(String key);
 }
